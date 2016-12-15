@@ -41,8 +41,8 @@ public class BufferedPanel extends JPanel implements KeyListener {
         int j = y / 100;
 
         int minI = i - 4;
-        int minJ = j - 3;
         int maxI = i + 4;
+        int minJ = j - 3;
         int maxJ = j + 3;
 
         for (j = minJ; j < maxJ; j ++) {
