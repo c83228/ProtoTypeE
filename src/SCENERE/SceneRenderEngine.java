@@ -1,6 +1,5 @@
 package SCENERE;
 
-
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import SDM.*;
@@ -26,13 +25,6 @@ public class SceneRenderEngine {
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
-
-        /*getVirtualCharacterXY(){
-            return
-        }*/
-
-
-
 
     }
 

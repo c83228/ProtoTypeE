@@ -2,13 +2,13 @@ package DOM;
 
 import java.awt.Point;
 
-public class DynamicObjectModule {
+    public class DynamicObjectModule {
 
-    Point getVirtualCharacterXY(){
+        public Point getVirtualCharacterXY(){
 
-        int x = 1400;
-        int y = 800;
+            int x = 1400;
+            int y = 800;
 
-        return new Point(x, y);
-    };
+            return new Point(x, y);
+        }
 }

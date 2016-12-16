@@ -1,9 +1,5 @@
 package SDM;
 
-/**
- * Created by hsu on 2016/12/15.
- */
-
 public class BasicBlock {
     private int type;
 

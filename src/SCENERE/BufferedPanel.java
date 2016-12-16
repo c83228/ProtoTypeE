@@ -1,5 +1,5 @@
 package SCENERE;
-
+import DOM.*;
 import SDM.*;
 import javax.swing.*;
 import java.awt.*;
@@ -13,8 +13,12 @@ public class BufferedPanel extends JPanel implements KeyListener {
     private BufferedImage[] imgs;
     private BasicBlock[][] scene;
 
-    private int x = 2500;
-    private int y = 1000;
+    DynamicObjectModule myDynamicObjectModule = new DynamicObjectModule();
+    Point newXY = myDynamicObjectModule.getVirtualCharacterXY();
+    int x = (int)newXY.getX();
+    int y = (int)newXY.getY();
+    //private int x = 2500;
+    //private int y = 1000;
 
     public BufferedPanel(BufferedImage[] imgs, BasicBlock[][] scene) {
         super();
@@ -55,9 +59,6 @@ public class BufferedPanel extends JPanel implements KeyListener {
         g.drawImage(offScreen, -(x - (x/100)*100) - 150, -(y - (y/100)*100) - 150, this);
     }
 
-    public void update(Graphics g) {
-        paintComponent(g);
-    }
 
     @Override
     public void keyTyped(KeyEvent e) {

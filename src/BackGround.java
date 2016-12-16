@@ -1,5 +1,3 @@
-import javax.swing.*;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import SDM.*;
@@ -17,7 +15,6 @@ public class BackGround {
 
         SceneRenderEngine mySceneRenderEngine = new SceneRenderEngine();
         mySceneRenderEngine.renderScene(myImgs,myScene);
-
 
     }
 
